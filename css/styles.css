@@ -1,0 +1,26 @@
+h3 {
+  background-color: yellow;
+  width: 200px;
+  text-align: center;
+  font-size: 24px;
+}
+.item-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.img-gallery {
+  width: 360px;
+  height: 200px;
+}
+.validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+.validation-input.valid {
+  border-color: #4caf50;
+}
+
+.validation-input.invalid {
+  border-color: #f44336;
+}
