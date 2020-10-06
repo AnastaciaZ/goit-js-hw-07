@@ -1,23 +1,19 @@
-const counterValue = document.querySelector('#value').textContent;
-console.log(counterValue);
+const counterValue = document.querySelector('#value');
 
-let number = 0;
+let number = Number(document.querySelector('#value').textContent);
 const decrementBtn = document.querySelector('[data-action="decrement"]');
 decrementBtn.addEventListener('click', decrement);
 
 function decrement() {
   number -= 1;
-  console.log(number);
-  counterValue.innerHTML = number;
-  //counterValue.textContent = number;
+  counterValue.textContent = number;
 }
 
 const incrementBtn = document.querySelector('[data-action="increment"]');
 incrementBtn.addEventListener('click', increment);
 function increment() {
   number += 1;
-  console.log(number);
-  //counterValue.innerHTML = number;
+  counterValue.textContent = number;
 }
 
 /*Счетчик состоит из спана и кнопок, которые должны увеличивать и уменьшать

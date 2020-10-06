@@ -15,3 +15,7 @@ const listEngredients = ingredients.map(ingredient => {
 console.log(listEngredients);
 const listEl = document.querySelector('#ingredients');
 listEl.append(...listEngredients);
+
+/*Напиши скрипт, который для каждого элемента массива ingredients создаст
+отдельный li, после чего вставит все li за одну операцию в список ul.ingredients.
+Для создания DOM-узлов используй document.createElement().*/

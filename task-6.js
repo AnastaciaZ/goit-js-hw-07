@@ -2,7 +2,7 @@ const inputFocus = document.querySelector('#validation-input');
 
 inputFocus.addEventListener('input', onInputChange);
 function onInputChange() {
-  if (inputFocus.value.length <= 6) {
+  if (inputFocus.value.length < 6) {
     inputFocus.classList.remove('valid');
     inputFocus.classList.add('invalid');
   } else {
