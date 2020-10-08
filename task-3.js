@@ -18,11 +18,10 @@ const images = [
 
 const listImages = document.querySelector('#gallery');
 const items = images.map(({ url, alt }) => {
-  listImages.insertAdjacentHTML(
-    'beforeend',
-    `<li><img class= "img-gallery" src="${url}" alt="${alt}"></li>`,
-  );
+  return `<li><img class= "img-gallery" src="${url}" alt="${alt}"></li>`;
 });
+const listImagesGalery = items.join('');
+listImages.insertAdjacentHTML('beforeend', listImagesGalery);
 
 console.log(listImages);
 /*Напиши скрипт для создания галлереи изображений по массиву данных.
